@@ -14,4 +14,10 @@ public class WiremockSetup {
         server.start();
         WireMock.configureFor(MOCK_HOST,MOCK_PORT);
     }
+
+    public void mockServerShutdown(){
+        if(server.isRunning() && null !=server){
+            server.shutdown();
+        }
+    }
 }

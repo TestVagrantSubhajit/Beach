@@ -9,8 +9,6 @@ import io.restassured.specification.RequestSpecification;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import static com.project.atlassian.constants.Generic.MOCK_URLS;
-
 @Component
 public class RequestBuilders {
     @Autowired
@@ -22,8 +20,8 @@ public class RequestBuilders {
     public void setContentTypes(){
         requestSpecBuilder.setContentType(ContentType.JSON);
     }
-    public void setBaseURIs(){
-        requestSpecBuilder.setBaseUri(MOCK_URLS);
+    public void setBaseURIs(String foundationUrl){
+        requestSpecBuilder.setBaseUri(foundationUrl);
     }
     public void setBasePaths(String bashPath){
         requestSpecBuilder.setBasePath(bashPath);
