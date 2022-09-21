@@ -31,10 +31,6 @@ public class RunnerTest extends AbstractTestNGSpringContextTests {
     @BeforeClass
     public void setUp(){
         wiremockSetup.mockServerInit();
-        wiremockSetup.mockForCreateUser();
-        wiremockSetup.mockForUpdateUser();
-        wiremockSetup.mockForGetUser();
-        wiremockSetup.mockForDeleteUser();
         requestBuilders.setBaseURIs();
         requestBuilders.setContentTypes();
     }

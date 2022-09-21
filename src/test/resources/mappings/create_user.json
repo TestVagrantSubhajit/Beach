@@ -1,0 +1,24 @@
+{
+  "request": {
+    "method": "POST",
+    "urlPattern": "/api/users",
+    "bodyPatterns" : [ {
+      "equalToJson" : {
+                        "name": "Subhajit",
+                        "job": "Engineer"
+                      }
+    } ]
+  },
+  "response": {
+    "status": 201,
+    "jsonBody":  {
+                  "name": "Subhajit",
+                  "job": "Engineer",
+                  "id": "100",
+                  "createdAt": "2022-09-21T10:25:33.853Z"
+                },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "request": {
+    "method": "PUT",
+    "urlPattern": "/api/users/2",
+    "bodyPatterns" : [ {
+      "equalToJson" : {
+                      "name": "Subhajit",
+                      "job": "Engineer"
+                    }
+    } ]
+  },
+  "response": {
+    "status": 200,
+    "jsonBody":  {
+      "name": "Subhajit",
+      "job": "Engineer",
+      "updatedAt": "2022-09-21T11:32:09.090Z"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
