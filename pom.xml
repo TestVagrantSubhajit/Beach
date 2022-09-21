@@ -15,9 +15,14 @@
 	<version>1.0.0</version>
 	<name>atlassian</name>
 	<description>Demo project for Spring Boot</description>
+	<packaging>jar</packaging>
 
 	<properties>
 		<java.version>1.8</java.version>
+		<testNG.version>7.6.1</testNG.version>
+		<restAssured.version>5.2.0</restAssured.version>
+		<lombok.version>1.18.24</lombok.version>
+		<jacksonDataBind.version>2.13.4</jacksonDataBind.version>
 	</properties>
 
 	<dependencies>
@@ -34,13 +39,13 @@
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
-			<version>7.6.1</version>
+			<version>${testNG.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
-			<version>5.2.0</version>
+			<version>${restAssured.version}</version>
 			<scope>test</scope>
 			<exclusions>
 				<exclusion>
@@ -52,21 +57,21 @@
 		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>xml-path</artifactId>
-			<version>5.2.0</version>
+			<version>${restAssured.version}</version>
 			<scope>test</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.24</version>
+			<version>${lombok.version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.13.4</version>
+			<version>${jacksonDataBind.version}</version>
 		</dependency>
 	</dependencies>
 
