@@ -18,6 +18,7 @@ A spring boot project based on RestAssured and Wiremock for https://reqres.in/
 * constants >> holds project specific constants
 * init >> responsible for initializing test methods
 * mocks >> responsible for setting up mock server such as wiremock
+* models >> contains java class which is being deserialized for API as json body
 * provides >> responsible for providing API response
 * tasks >> responsible for real API health check task
 * validations >> responsible for API response validation
