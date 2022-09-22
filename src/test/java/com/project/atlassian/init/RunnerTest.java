@@ -46,7 +46,7 @@ public class RunnerTest extends AbstractTestNGSpringContextTests {
         requestBuilders.setContentTypes();
     }
 
-    @Test
+    @Test(description = "Verify that API consumer should able to create user using POST[api/users]")
     public void createUser() throws JsonProcessingException {
         requestBuilders.setBasePaths("api/users");
         requestBuilders.setRequestBody("Subhajit","Engineer");
@@ -55,7 +55,7 @@ public class RunnerTest extends AbstractTestNGSpringContextTests {
         log.info(response.asPrettyString());
     }
 
-    @Test(priority = 1)
+    @Test(priority = 1,description = "Verify that API consumer should able to update user using PUT[api/users/2]")
     public void updateUser() throws JsonProcessingException {
         requestBuilders.setBasePaths("api/users/2");
         requestBuilders.setRequestBody("Subhajit","Engineer");
@@ -64,7 +64,7 @@ public class RunnerTest extends AbstractTestNGSpringContextTests {
         log.info(response.asPrettyString());
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2,description = "Verify that API consumer should able to get user details using GET[api/users/2]")
     public void getUser(){
         requestBuilders.setBasePaths("api/users/2");
         response=apiResponse.getResponse("get");
@@ -72,7 +72,7 @@ public class RunnerTest extends AbstractTestNGSpringContextTests {
         log.info(response.asPrettyString());
     }
 
-    @Test(priority = 3)
+    @Test(priority = 3,description = "Verify that API consumer should able to delete user using DELETE[api/users/2]")
     public void deleteUser(){
         requestBuilders.setBasePaths("api/users/2");
         response=apiResponse.getResponse("delete");
