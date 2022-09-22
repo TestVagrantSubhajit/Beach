@@ -1,8 +1,8 @@
-package com.project.atlassian.common;
+package com.project.beach.common;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.project.atlassian.models.User;
+import com.project.beach.models.User;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;

@@ -1,6 +1,6 @@
-package com.project.atlassian.providers;
+package com.project.beach.providers;
 
-import com.project.atlassian.common.RequestBuilders;
+import com.project.beach.common.RequestBuilders;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.springframework.beans.factory.annotation.Autowired;

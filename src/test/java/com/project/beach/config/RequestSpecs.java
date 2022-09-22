@@ -1,4 +1,4 @@
-package com.project.atlassian.config;
+package com.project.beach.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.builder.RequestSpecBuilder;

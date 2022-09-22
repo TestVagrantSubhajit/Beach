@@ -1,4 +1,4 @@
-package com.project.atlassian;
+package com.project.beach;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

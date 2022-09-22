@@ -1,4 +1,4 @@
-package com.project.atlassian.models;
+package com.project.beach.models;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

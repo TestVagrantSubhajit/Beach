@@ -11,9 +11,9 @@
 	</parent>
 
 	<groupId>com.project</groupId>
-	<artifactId>atlassian</artifactId>
+	<artifactId>Beach</artifactId>
 	<version>1.0.0</version>
-	<name>atlassian</name>
+	<name>Beach</name>
 	<description>Demo project for Spring Boot</description>
 	<packaging>jar</packaging>
 

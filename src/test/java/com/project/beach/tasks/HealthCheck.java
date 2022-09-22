@@ -1,4 +1,4 @@
-package com.project.atlassian.tasks;
+package com.project.beach.tasks;
 
 import io.restassured.RestAssured;
 import org.springframework.stereotype.Component;

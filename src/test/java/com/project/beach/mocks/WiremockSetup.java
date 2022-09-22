@@ -1,4 +1,4 @@
-package com.project.atlassian.mocks;
+package com.project.beach.mocks;
 
 import com.github.tomakehurst.wiremock.WireMockServer;
 import com.github.tomakehurst.wiremock.client.WireMock;

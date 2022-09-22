@@ -1,11 +1,11 @@
-package com.project.atlassian.init;
+package com.project.beach.init;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.project.atlassian.common.RequestBuilders;
-import com.project.atlassian.mocks.WiremockSetup;
-import com.project.atlassian.providers.ApiResponse;
-import com.project.atlassian.tasks.HealthCheck;
-import com.project.atlassian.validations.ValidateResponse;
+import com.project.beach.common.RequestBuilders;
+import com.project.beach.mocks.WiremockSetup;
+import com.project.beach.providers.ApiResponse;
+import com.project.beach.tasks.HealthCheck;
+import com.project.beach.validations.ValidateResponse;
 import io.restassured.response.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +16,8 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import static com.project.atlassian.constants.Generic.FOUNDATION_URL;
-import static com.project.atlassian.constants.Generic.MOCK_URLS;
+import static com.project.beach.constants.Generic.FOUNDATION_URL;
+import static com.project.beach.constants.Generic.MOCK_URLS;
 
 @SpringBootTest(classes = {RunnerTest.class})
 @ComponentScan(basePackages= {"com.project.atlassian"})

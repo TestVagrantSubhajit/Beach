@@ -1,4 +1,4 @@
-package com.project.atlassian.validations;
+package com.project.beach.validations;
 
 import org.springframework.stereotype.Component;
 import org.testng.Assert;
