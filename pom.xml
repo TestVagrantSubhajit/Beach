@@ -23,6 +23,7 @@
 		<restAssured.version>5.2.0</restAssured.version>
 		<lombok.version>1.18.24</lombok.version>
 		<jacksonDataBind.version>2.13.4</jacksonDataBind.version>
+		<wiremock.version>2.34.0</wiremock.version>
 	</properties>
 
 	<dependencies>
@@ -76,7 +77,7 @@
 		<dependency>
 			<groupId>com.github.tomakehurst</groupId>
 			<artifactId>wiremock-jre8</artifactId>
-			<version>2.34.0</version>
+			<version>${wiremock.version}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
