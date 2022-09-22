@@ -26,6 +26,8 @@ A spring boot project based on RestAssured and Wiremock for https://reqres.in/
 ## Folder information
 * mappings : this folder contains mapping files consists of request and response matching for wiremock
 
-## How to run application
+## How to run application (with Real API)
 #### With maven command line : mvn test
 #### Manual trigger : need to go to RunnerTest (inside init package) and run the class
+## How to run application (with Mock API)
+#### Need to change status code from 200 to any other code under HealthCheck class (inside tasks package) and run the application by following same process as real API
