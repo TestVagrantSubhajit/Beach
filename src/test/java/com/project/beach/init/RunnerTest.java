@@ -20,7 +20,7 @@ import static com.project.beach.constants.Generic.FOUNDATION_URL;
 import static com.project.beach.constants.Generic.MOCK_URLS;
 
 @SpringBootTest(classes = {RunnerTest.class})
-@ComponentScan(basePackages= {"com.project.atlassian"})
+@ComponentScan(basePackages= {"com.project.beach"})
 @Slf4j
 public class RunnerTest extends AbstractTestNGSpringContextTests {
     @Autowired
