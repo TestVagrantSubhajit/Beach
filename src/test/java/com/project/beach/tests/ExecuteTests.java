@@ -1,4 +1,4 @@
-package com.project.beach.init;
+package com.project.beach.tests;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.project.beach.common.RequestBuilders;
@@ -19,10 +19,10 @@ import org.testng.annotations.Test;
 import static com.project.beach.constants.Generic.FOUNDATION_URL;
 import static com.project.beach.constants.Generic.MOCK_URLS;
 
-@SpringBootTest(classes = {RunnerTest.class})
+@SpringBootTest(classes = {ExecuteTests.class})
 @ComponentScan(basePackages= {"com.project.beach"})
 @Slf4j
-public class RunnerTest extends AbstractTestNGSpringContextTests {
+public class ExecuteTests extends AbstractTestNGSpringContextTests {
     @Autowired
     public RequestBuilders requestBuilders;
     @Autowired
